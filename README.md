@@ -53,6 +53,7 @@ Bash Shell
 ## Resources
 
 - zsh: https://zsh.sourceforge.io/Doc/Release/Files.html#Files
+  https://scriptingosx.com/2019/07/moving-to-zsh-06-customizing-the-zsh-prompt/
 - template inspo: https://www.youtube.com/watch?v=bTLYiNvRIVI&list=PLnbVXUq1oFVk_VzhxrjKL2ILp_jXs89d-&index=68&t=904s&ab_channel=chris%40machine
 - template inspo: https://github.com/Mach-OS/Machfiles
 - zoxide: https://github.com/ajeetdsouza/zoxide
