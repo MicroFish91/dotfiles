@@ -1,1 +1,3 @@
-alias config=/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME
+shopt -s globstar
+
+alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
