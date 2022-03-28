@@ -1,8 +1,6 @@
-# export ZDOTDIR=$HOME/.config/zsh
-# source "$HOME/.config/zsh/.zshrc"
 #!/bin/sh
 export ZDOTDIR=$HOME/.config/zsh
-HISTFILE=~/.zsh_history
+HISTFILE=$HOME/.zsh_history
 setopt appendhistory
 
 # some useful options (man zshoptions)
@@ -11,9 +9,8 @@ setopt interactive_comments
 stty stop undef		# Disable ctrl-s to freeze terminal.
 zle_highlight=('paste:none')
 
-# beeping is annoying
+# no beeping
 unsetopt BEEP
-
 
 # completions
 autoload -Uz compinit
@@ -43,12 +40,20 @@ zsh_add_file "zsh-prompt"
 zsh_add_plugin "zsh-users/zsh-autosuggestions"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
 zsh_add_plugin "hlissner/zsh-autopair"
+# zsh_add_completion "esc/conda-zsh-completion" false
 # For more plugins: https://github.com/unixorn/awesome-zsh-plugins
 # More completions https://github.com/zsh-users/zsh-completions
 
-
-# Speedy keys
-xset r rate 210 40
+# FZF
+# TODO update for mac
+[ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
+[ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
+[ -f /usr/share/doc/fzf/examples/completion.zsh ] && source /usr/share/doc/fzf/examples/completion.zsh
+[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ] && source /usr/share/doc/fzf/examples/key-bindings.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f $ZDOTDIR/completion/_fnm ] && fpath+="$ZDOTDIR/completion/"
+# export FZF_DEFAULT_COMMAND='rg --hidden -l ""'
+compinit
 
 # For QT Themes
 export QT_QPA_PLATFORMTHEME=qt5ct
@@ -57,4 +62,8 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 alias cp='cp -i'
 alias mv='mv -i'
 
+alias z="zoxide"
+alias zi="zoxide"
+
+# alias config="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"

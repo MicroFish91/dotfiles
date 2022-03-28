@@ -244,112 +244,112 @@ _fnm_commands() {
 (( $+functions[_fnm__alias_commands] )) ||
 _fnm__alias_commands() {
     local commands; commands=(
-        
+
     )
     _describe -t commands 'fnm alias commands' commands "$@"
 }
 (( $+functions[_fnm__completions_commands] )) ||
 _fnm__completions_commands() {
     local commands; commands=(
-        
+
     )
     _describe -t commands 'fnm completions commands' commands "$@"
 }
 (( $+functions[_fnm__current_commands] )) ||
 _fnm__current_commands() {
     local commands; commands=(
-        
+
     )
     _describe -t commands 'fnm current commands' commands "$@"
 }
 (( $+functions[_fnm__default_commands] )) ||
 _fnm__default_commands() {
     local commands; commands=(
-        
+
     )
     _describe -t commands 'fnm default commands' commands "$@"
 }
 (( $+functions[_fnm__env_commands] )) ||
 _fnm__env_commands() {
     local commands; commands=(
-        
+
     )
     _describe -t commands 'fnm env commands' commands "$@"
 }
 (( $+functions[_fnm__exec_commands] )) ||
 _fnm__exec_commands() {
     local commands; commands=(
-        
+
     )
     _describe -t commands 'fnm exec commands' commands "$@"
 }
 (( $+functions[_fnm__help_commands] )) ||
 _fnm__help_commands() {
     local commands; commands=(
-        
+
     )
     _describe -t commands 'fnm help commands' commands "$@"
 }
 (( $+functions[_fnm__install_commands] )) ||
 _fnm__install_commands() {
     local commands; commands=(
-        
+
     )
     _describe -t commands 'fnm install commands' commands "$@"
 }
 (( $+functions[_fnm__list_commands] )) ||
 _fnm__list_commands() {
     local commands; commands=(
-        
+
     )
     _describe -t commands 'fnm list commands' commands "$@"
 }
 (( $+functions[_fnm__list-remote_commands] )) ||
 _fnm__list-remote_commands() {
     local commands; commands=(
-        
+
     )
     _describe -t commands 'fnm list-remote commands' commands "$@"
 }
 (( $+functions[_fnm__ls_commands] )) ||
 _fnm__ls_commands() {
     local commands; commands=(
-        
+
     )
     _describe -t commands 'fnm ls commands' commands "$@"
 }
 (( $+functions[_ls_commands] )) ||
 _ls_commands() {
     local commands; commands=(
-        
+
     )
     _describe -t commands 'ls commands' commands "$@"
 }
 (( $+functions[_fnm__ls-remote_commands] )) ||
 _fnm__ls-remote_commands() {
     local commands; commands=(
-        
+
     )
     _describe -t commands 'fnm ls-remote commands' commands "$@"
 }
 (( $+functions[_ls-remote_commands] )) ||
 _ls-remote_commands() {
     local commands; commands=(
-        
+
     )
     _describe -t commands 'ls-remote commands' commands "$@"
 }
 (( $+functions[_fnm__uninstall_commands] )) ||
 _fnm__uninstall_commands() {
     local commands; commands=(
-        
+
     )
     _describe -t commands 'fnm uninstall commands' commands "$@"
 }
 (( $+functions[_fnm__use_commands] )) ||
 _fnm__use_commands() {
     local commands; commands=(
-        
+
     )
     _describe -t commands 'fnm use commands' commands "$@"
 }

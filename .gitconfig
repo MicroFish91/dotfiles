@@ -1,0 +1,15 @@
+[user]
+	name = MicroFish91
+	email = mwfisher91@gmail.com
+[core]
+	autocrlf = false
+	safecrlf = true
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	type = cat-file
+	dump = cat-file
+[init]
+	defaultBranch = main
