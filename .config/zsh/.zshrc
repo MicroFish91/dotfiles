@@ -43,6 +43,12 @@ zsh_add_plugin "hlissner/zsh-autopair"
 # For more plugins: https://github.com/unixorn/awesome-zsh-plugins
 # More completions https://github.com/zsh-users/zsh-completions
 
+# zsh-autosuggestions config
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+
+# Keybindings
+bindkey '^ ' autosuggest-accept
+
 # FZF
 # TODO update for mac
 [ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
