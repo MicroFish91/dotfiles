@@ -12,8 +12,9 @@
 	type = cat-file
 	dump = cat-file
 	logc = log --graph --oneline --decorate
-	undoadd="reset"
-	undocommit="reset --soft HEAD~1"
-	editcommit="commit --amend"
+	undoadd = "reset"
+	undocommit = "reset --soft HEAD~1"
+	editcommit = "commit --amend"
+	alias = ! git config --get-regexp ^alias\\.
 [init]
 	defaultBranch = main
